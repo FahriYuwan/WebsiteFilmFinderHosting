@@ -35,9 +35,6 @@ use App\Http\Controllers\CMS\CMSReviewsController;
 //     ]);
 // });
 
-Route::get('/{any}', function () {
-    return Inertia::render('Welcome'); // Ganti 'Welcome' dengan komponen halaman React Anda
-})->where('any', '.*');
 
 Route::get('/', function () {
     return Inertia::render('Home/introduction', [
