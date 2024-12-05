@@ -38,13 +38,12 @@ RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Install Node.js dependencies
+# Install Node.js dependencies dan build frontend
 RUN npm install
+RUN npm run build
 
-# Expose ports
+# Expose port
 EXPOSE 8000
-EXPOSE 3000
-EXPOSE 5173
 
 # Command to run the application
-CMD ["sh", "-c", "php artisan serve --host=0.0.0.0 --port=8000 & npm run dev"]
+CMD ["php", "artisan", "serve", "--host=0.0.0.0", "--port=8000"]
