@@ -5,7 +5,7 @@ import '../css/app.css';
 import { createRoot } from 'react-dom/client';
 import { createInertiaApp } from '@inertiajs/react';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
-import App from './App'; // Import komponen App
+import App from './app'; // Import komponen App
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
