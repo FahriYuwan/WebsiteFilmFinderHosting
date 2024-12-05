@@ -13,8 +13,10 @@ export default defineConfig({
     build: {
         outDir: 'public/build', // Tempatkan hasil build di public/build
         emptyOutDir: true,
+        base: 'https://websitefilmfinder-production.up.railway.app/',
     },
     server: {
+        https:true,
         host: '0.0.0.0',
         port: 5173,
         strictPort: true,
