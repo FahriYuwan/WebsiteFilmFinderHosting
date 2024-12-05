@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100% auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  justify-content: flex-start; /* Ubah dari center ke flex-start */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse; /* Menghindari jarak antar border */
+}
+
+td {
+  padding: 8px; /* Menambahkan jarak di dalam sel */
+  vertical-align: middle; /* Menyelaraskan konten secara vertikal */
+}
+
+/* Style tombol dalam tabel */
+button {
+  display: inline-block;
+  padding: 4px 8px;
+  margin: 2px;
+  font-size: 0.875rem; /* Ukuran font tombol */
+}
+
+.status-button.pending {
+  background-color: gray;
+  color: white;
+}
+.status-button.approved {
+  background-color: green;
+  color: white;
+}
+.status-button.unapproved {
+  background-color: red;
+  color: white;
+}
+
+.custom-blue-dark {
+  background-color: #3D5A80;
+  color: #FFFFFF;
+}
+.custom-blue-light {
+  background-color: #98C1D9;
+  color: #FFFFFF;
+}
+.custom-orange {
+  background-color: #EE6C4D;
+  color: #FFFFFF;
+}
+.custom-white {
+  background-color: #FFFFFF;
+  color: #293241;
+}
+.custom-blue {
+  background-color: #293241;
+  color: #FFFFFF;
+}
+/* Warna untuk tombol */
+.bg-custom-blue-light {
+  background-color: #3D5A80; /* Warna biru terang */
+}
+
+.bg-custom-blue-dark:hover {
+background-color: #2C4A6B; /* Warna biru gelap untuk hover */
+}
+
+.bg-dark-accent {
+background-color: #EE6C4D; /* Warna oranye */
+}
+
+.bg-dark-hover:hover {
+background-color: #334155; /* Warna abu-abu biru untuk hover */
+}
+/* Sidebar expand/collapse */
+#sidebar {
+transition: width 0.3s ease;
+}
+#sidebar.expanded {
+width: 240px;
+}
+#sidebar.collapsed {
+width: 60px;
+}
+
+/* Sidebar text expand/collapse */
+.sidebar-item-text {
+transition: width 0.3s ease, margin-left 0.3s ease;
+overflow: hidden;
+white-space: nowrap;
+}
+.expanded .sidebar-item-text {
+width: 100%;
+margin-left: 12px;
+}
+.collapsed .sidebar-item-text {
+width: 0;
+margin-left: 0;
+}
+
+
+/* Submenu collapse/expand */
+.submenu {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease, opacity 0.8s ease;
+}
+.submenu.expanded {
+max-height: 500px;
+opacity: 1;
+}
+
+.submenu .active {
+  background-color: #1F2937; /* Warna latar belakang untuk item aktif */
+  color: #EE6C4D; /* Warna teks untuk item aktif */
+}
+
+.tooltip {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  }
+
+  
+  
+/* Tooltip */
+.sidebar-item .tooltip {
+visibility: hidden;
+opacity: 0;
+transition: opacity 0.3s ease, transform 0.3s ease;
+width: 80px;
+max-width: 150px; /* Tambahkan properti width untuk memperlebar tooltip */
+}
+
+.sidebar-item:hover .tooltip {
+visibility: visible;
+opacity: 1;
+transform: translateX(0);
+}
+
+.sidebar-item.active {
+background-color: #334155; /* Warna latar belakang untuk item aktif */
+color: #EE6C4D; /* Warna teks untuk item aktif */
+}
+
+.sidebar-item.active .sidebar-item-text {
+color: #EE6C4D; /* Warna teks untuk item aktif */
+}
+
+.sidebar-item.active svg {
+stroke: #EE6C4D; /* Warna ikon untuk item aktif */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+#sidebar.expanded {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 50;
+}
+#sidebar.collapsed {
+  width: 64px;
+}
+#sidebar {
+  transition: width 0.3s ease;
+}
+#sidebar.expanded {
+  display: flex;
+}
+#sidebar.collapsed .tooltip {
+  opacity: 1;
+  pointer-events: auto;
+  }
+}
+
+#popup {
+transition: opacity 0.3s ease-in-out;
+}
+
+#popup.show {
+opacity: 1;
+visibility: visible;
+}

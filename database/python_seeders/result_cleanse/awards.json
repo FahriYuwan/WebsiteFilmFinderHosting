@@ -1,0 +1,107 @@
+[
+    {
+        "award_id": 1,
+        "award_name": "Best Live Action Short",
+        "year": 2016
+    },
+    {
+        "award_id": 2,
+        "award_name": "Best Actor",
+        "year": 2009
+    },
+    {
+        "award_id": 3,
+        "award_name": "Best Sound",
+        "year": 2007
+    },
+    {
+        "award_id": 4,
+        "award_name": "Best Director",
+        "year": 2010
+    },
+    {
+        "award_id": 5,
+        "award_name": "Best Original Song",
+        "year": 2009
+    },
+    {
+        "award_id": 6,
+        "award_name": "Best Animated Short",
+        "year": 2004
+    },
+    {
+        "award_id": 7,
+        "award_name": "Best Adapted Screenplay",
+        "year": 2020
+    },
+    {
+        "award_id": 8,
+        "award_name": "Best Makeup and Hairstyling",
+        "year": 2010
+    },
+    {
+        "award_id": 9,
+        "award_name": "Best Picture",
+        "year": 2009
+    },
+    {
+        "award_id": 10,
+        "award_name": "Best Costume Design",
+        "year": 2006
+    },
+    {
+        "award_id": 11,
+        "award_name": "Best Original Score",
+        "year": 2004
+    },
+    {
+        "award_id": 12,
+        "award_name": "Best Production Design",
+        "year": 2006
+    },
+    {
+        "award_id": 13,
+        "award_name": "Best Cinematography",
+        "year": 2015
+    },
+    {
+        "award_id": 14,
+        "award_name": "Best Documentary Feature",
+        "year": 2020
+    },
+    {
+        "award_id": 15,
+        "award_name": "Best Actress",
+        "year": 2000
+    },
+    {
+        "award_id": 16,
+        "award_name": "Best International Feature",
+        "year": 2010
+    },
+    {
+        "award_id": 17,
+        "award_name": "Best Visual Effects",
+        "year": 2008
+    },
+    {
+        "award_id": 18,
+        "award_name": "Best Film Editing",
+        "year": 2003
+    },
+    {
+        "award_id": 19,
+        "award_name": "Best Documentary Short",
+        "year": 2015
+    },
+    {
+        "award_id": 20,
+        "award_name": "Best Animated Feature",
+        "year": 2002
+    },
+    {
+        "award_id": 21,
+        "award_name": "Best Original Screenplay",
+        "year": 2003
+    }
+]

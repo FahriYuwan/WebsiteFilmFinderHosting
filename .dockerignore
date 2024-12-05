@@ -1,0 +1,30 @@
+# Direktori Dependencies
+node_modules
+vendor
+
+# File dan Direktori Build
+dist
+public/build
+
+# File Konfigurasi dan Lingkungan
+# .env
+# .env.local
+# .env.*.local
+
+# File Log
+*.log
+
+# Direktori Sistem dan Editor
+.git
+.gitignore
+.phpunit.result.cache
+Homestead.yaml
+Homestead.json
+.idea
+.vscode
+.DS_Store
+
+# File Temp dan Backup
+*.tmp
+*.bak
+*.swp
