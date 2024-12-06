@@ -82,8 +82,7 @@ Platform ini dirancang untuk mempermudah pengguna dalam:
 ## ⚠️ **Catatan Penting**  
 Project ini masih dalam tahap pengembangan
 1. Penginputan Film untuk gambar masih menyimpan di local storage, jadi akan terkendala untuk penginputan gambar
-2. Login memakai google masih terjadi bug
-3. Verifikasi email masih terjadi bug (dihadang oleh middleware)
+2. Verifikasi email masih terjadi bug (dihadang oleh middleware)
 
 
 
