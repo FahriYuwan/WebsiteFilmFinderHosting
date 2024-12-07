@@ -1,4 +1,4 @@
-# 🎥 FilmFinder 🎬  
+# 🎥 DEMO FilmFinder 🎬  
 <div align="center">
   <img src="https://img.shields.io/github/contributors/FahriYuwan/WebsiteFilmFinder?color=red" alt="Contributors" />
   <img src="https://img.shields.io/github/commit-activity/m/FahriYuwan/WebsiteFilmFinder?color=blue" alt="Commit Activity" />
@@ -9,6 +9,10 @@
 **FilmFinder** adalah platform berbasis web untuk mencari, menilai, dan mengelola informasi tentang film, acara TV, dan konten hiburan lainnya. Terinspirasi oleh situs seperti IMDb, FilmFinder memberikan pengalaman navigasi yang mudah dan ramah pengguna.  
 
 ---
+
+## **Demo**  
+Untuk link demo website bisa diakses melalui link ini : 
+https://websitefilmfinder-production.up.railway.app/
 
 ## 📚 **Deskripsi Singkat**  
 FilmFinder menyediakan informasi terperinci tentang:  
@@ -73,57 +77,14 @@ Platform ini dirancang untuk mempermudah pengguna dalam:
 
 ---
 
-## 🖥️ **Cara Install Local (Tanpa Docker)**  
 
-1. Install **Composer** di perangkat Anda:  
-  ```bash
-  composer install
-  ```
-
-2. Install dependensi **React**:  
-  ```bash
-  npm install
-  ```
-
-3. Salin file `.env.example` di folder `server`, ubah namanya menjadi `.env`, lalu isi sesuai konfigurasi Anda.  
-  Jalankan perintah berikut untuk mendapatkan app key:  
-  ```bash
-  php artisan key:generate
-  ```
-
-4. Migrasikan database dan jalankan seeder (seeder untuk roles dan user):  
-  ```bash
-  php artisan migrate
-  php artisan db:seed
-  ```
-
-5. Jalankan seeder.py untuk menambahkan data awal: 
-  ```bash
-  python database/python_seeders/seeder.py
-  ```
-
-6. Jalankan server Laravel dan React secara bersamaan:  
-  ```bash
-  php artisan serve
-  npm run dev
-  ```
-
-7. Buka browser dan akses `http://127.0.0.1:8000/` untuk melihat website FilmFinder.
-
-## 🐋 **Cara Install dengan Docker**  
-
-1. Pastikan Docker telah terpasang di perangkat Anda.
-2. Sesuaikan konfigurasi variabel DB di .env dan seeder.py.
-3. Jalankan perintah berikut:
-    ```bash 
-    docker-compose up --build
-4. Buka browser dan akses `http://localhost:8000/` untuk melihat website FilmFinder.
 
 ## ⚠️ **Catatan Penting**  
-1. Ganti value menjadi "localhost" untuk variabel db_host jika ingin berjalan di lokal. Gunakan "db" untuk db_host jika berjalan di Docker.
-2. Sesuaikan .env untuk fitur verify email dan login Google.
-3. 📺 Tutorial Lengkap:
-Akses https://www.youtube.com/watch?v=UVfBVNWVdSc untuk melihat tutorial video.
+Project ini masih dalam tahap pengembangan
+1. Penginputan Film untuk gambar masih menyimpan di local storage, jadi akan terkendala untuk penginputan gambar
+2. Verifikasi email masih terjadi bug (dihadang oleh middleware)
+
+
 
 ## 🤝 Kontributor
 <div align="center"> <a href="https://github.com/FahriYuwan"> <img src="https://avatars.githubusercontent.com/u/130884349?v=4" width="100" alt="Fahri Yuwan" style="border-radius: 50%; border: 2px solid #ffd700;" /></a> <a href="https://github.com/RafifShabi"> <img src="https://avatars.githubusercontent.com/u/72936629?v=4" width="100" alt="Rafif Shabi Prasetyo" style="border-radius: 50%; border: 2px solid #ffd700;" /> </a> </div>
