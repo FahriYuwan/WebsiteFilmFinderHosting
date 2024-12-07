@@ -150,7 +150,7 @@ Route::get('email/verify', function () {
 
 Route::get('email/verify/{id}/{hash}', function () {
     return Inertia::render('Auth/VerifyEmail');
-})->middleware(['auth'])->name('verification.verify');
+})->name('verification.verify');
 
 Route::get('email/verification-notification', function (Request $request) {
     $request->user()->sendEmailVerificationNotification();
