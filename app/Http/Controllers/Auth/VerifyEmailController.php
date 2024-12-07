@@ -37,6 +37,6 @@ class VerifyEmailController extends Controller
             event(new Verified($user));
         }
 
-        return redirect()->intended('/home?verified=1');
+        return redirect()->route('home')->with('verified', true);
     }
 }
